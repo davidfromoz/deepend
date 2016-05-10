@@ -12,5 +12,3 @@ def detail(request, plant_id):
     plant=LocalPlant.objects.get(id=plant_id)
     context={'plant':plant}
     return render(request, 'plant/detail.html', context)
-
-def
