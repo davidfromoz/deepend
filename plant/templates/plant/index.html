@@ -1,0 +1,11 @@
+{% if plant_list %}
+
+  <ul>
+    {%for plant in plant_list%}
+      <li><a href="/plant/{{plant.id}}/">{{plant.common_name}}</a>{{plant.plant.scientific_name}}</li>
+      {%endfor%}
+  </ul>
+{% else %}
+  <p> no plants in the list</p>
+{% endif %}
+<a href = "/admin">admin</a>

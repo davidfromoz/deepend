@@ -1,0 +1,9 @@
+<h1>{{plant.plant.scientific_name}}</h1>
+<i>{% for tag in plant.tag_set.all %}
+{{tag.name}}
+{%endfor%}</i><br>
+
+{{plant.common_name}}<br>
+height:{{plant.height}}<br>
+{{plant.text}}
+<a href = "/admin">admin</a>
